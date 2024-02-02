@@ -1,0 +1,24 @@
+class MyShape:
+    def __init__(self, color="Blue", is_filled=False):
+        self.color = color
+        self.is_filled = is_filled
+
+    def display_info(self):
+        print(f"Color: {self.color}")
+        print(f"Is Filled: {self.is_filled}")
+
+    def __str__(self):
+        return f"MyShape - Color: {self.color}, Is Filled: {self.is_filled}"
+
+
+if __name__ == "__main__":
+    
+    default_shape = MyShape()
+
+    
+    print(str(default_shape))
+
+    custom_shape = MyShape(color="Green", is_filled=True)
+
+    
+    print(str(custom_shape))
