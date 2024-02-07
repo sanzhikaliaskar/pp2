@@ -1,16 +1,8 @@
 class MyShape:
     def __init__(self, color, is_filled):
-        self.color = color
-        self.is_filled = is_filled
+        self.color, self.is_filled = color, is_filled
 
     def display_info(self):
-        print(f"Color: {self.color}")
-        print(f"Is Filled: {self.is_filled}")
+        print(f"Color: {self.color}\nIs Filled: {self.is_filled}")
 
-
-if __name__ == "__main__":
-
-    my_shape = MyShape(color="Red", is_filled=True)
-
-    
-    my_shape.display_info()
+MyShape(color="Red", is_filled=True).display_info()
