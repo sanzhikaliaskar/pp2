@@ -1,0 +1,11 @@
+from collections import Counter
+
+def word_frequency(input_string):
+    return dict(Counter(input_string.split()))
+
+
+input_text = "This is a sample text. This text is used for testing the word frequency function."
+result = word_frequency(input_text)
+
+print("Input Text:", input_text)
+print("Word Frequency:", result)
