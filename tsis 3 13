@@ -1,0 +1,15 @@
+class MyShape:
+    def __init__(self, color="Blue", is_filled=False):
+        self.color, self.is_filled = color, is_filled
+
+    def display_info(self):
+        print(f"Color: {self.color}\nIs Filled: {self.is_filled}")
+
+    def __str__(self):
+        return f"MyShape - Color: {self.color}, Is Filled: {self.is_filled}"
+
+    def getArea(self):
+        return 0
+
+print("Area:", MyShape().getArea())
+print("Area:", MyShape(color="Green", is_filled=True).getArea())
