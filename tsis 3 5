@@ -1,0 +1,11 @@
+def is_prime(num):
+    return num > 1 and all(num % i != 0 for i in range(2, int(num**0.5) + 1))
+
+def filter_prime(numbers):
+    return [num for num in numbers if is_prime(num)]
+
+# Example usage:
+numbers_list = [2, 5, 8, 11, 15, 16, 17, 23, 29]
+prime_numbers = filter_prime(numbers_list)
+print("Original list:", numbers_list)
+print("Prime numbers:", prime_numbers)
