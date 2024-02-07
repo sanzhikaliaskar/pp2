@@ -1,0 +1,32 @@
+import math
+
+class MyShape:
+    def __init__(self, color="Blue", is_filled=False):
+        self.color, self.is_filled = color, is_filled
+
+    def __str__(self):
+        return f"{self.__class__.__name__} - Color: {self.color}, Is Filled: {self.is_filled}"
+
+class Rectangle(MyShape):
+    def __init__(self, color="Blue", is_filled=False, x_top_left=0, y_top_left=0, length=0, width=0):
+        super().__init__(color, is_filled)
+        self.x_top_left, self.y_top_left, self.length, self.width = x_top_left, y_top_left, length, width
+
+    def __str__(self):
+        return f"{super().__str__()}, Top Left: ({self.x_top_left}, {self.y_top_left}), Length: {self.length}, Width: {self.width}, Area: {self.getArea()}"
+
+    def getArea(self):
+        return self.length * self.width
+
+
+rectangle_instance = Rectangle(
+    color=input("Enter color for Rectangle: "),
+    is_filled=input("Is the Rectangle filled? (True/False): ").lower() == 'true',
+    x_top_left=float(input("Enter x-coordinate of top-left corner: ")),
+    y_top_left=float(input("Enter y-coordinate of top-left corner: ")),
+    length=float(input("Enter length of the Rectangle: ")),
+    width=float(input("Enter width of the Rectangle: "))
+)
+
+
+print(rectangle_instance)
