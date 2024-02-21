@@ -1,0 +1,3 @@
+n = int(input("Enter a number (n): "))
+even_numbers_generator = (i for i in range(n + 1) if i % 2 == 0)
+print("Even numbers between 0 and", n, "are:", *even_numbers_generator, sep=", ")
