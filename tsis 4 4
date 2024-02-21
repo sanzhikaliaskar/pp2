@@ -1,0 +1,3 @@
+base_length, height = float(input("Length of base: ")), float(input("Height of parallelogram: "))
+result = base_length * height
+print("Expected Output:", result)
