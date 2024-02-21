@@ -1,0 +1,4 @@
+height = float(input("Height: "))
+base1, base2 = float(input("Base, first value: ")), float(input("Base, second value: "))
+result = 0.5 * (base1 + base2) * height
+print("Expected Output:", result)
