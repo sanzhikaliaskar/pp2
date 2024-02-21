@@ -1,0 +1,4 @@
+squares = (i ** 2 for i in range(3, 8))   3 to 7
+
+for square in squares:
+    print(square)
