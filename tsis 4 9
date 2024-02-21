@@ -1,0 +1,5 @@
+N = 5
+squares_generator = (i ** 2 for i in range(N))
+
+for square in squares_generator:
+    print(square)
