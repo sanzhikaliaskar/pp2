@@ -1,0 +1,6 @@
+from datetime import datetime, timedelta
+
+result_date = datetime.now() - timedelta(days=5)
+
+print("Current Date:", datetime.now().strftime("%Y-%m-%d"))
+print("Date after subtracting five days:", result_date.strftime("%Y-%m-%d"))
