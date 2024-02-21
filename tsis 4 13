@@ -1,0 +1,5 @@
+n = 5  
+countdown_generator = (i for i in range(n, -1, -1))
+
+for number in countdown_generator:
+    print(number)
