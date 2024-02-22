@@ -1,0 +1,73 @@
+#1
+fruits = {"apple", 
+"banana", 
+"cherry"}
+if "apple" in fruits:
+  print("Yes, apple is a fruit!")
+
+#2
+fruits = {"apple", 
+"banana", 
+"cherry"}
+fruits.add("orange")
+
+#3
+fruits = {"apple", 
+"banana", 
+"cherry"}
+more_fruits = ["orange", 
+"mango", 
+"grapes"]
+fruits.update(more_fruits)
+
+#4
+fruits = {"apple", 
+"banana", 
+"cherry"}
+fruits.remove("banana")
+
+#5
+fruits = {"apple", 
+"banana", 
+"cherry"}
+fruits.discard("banana")
+
+#1
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(car.get("model"))
+
+#2
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car["year"] = 2020
+
+#3
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car["color"] = "red"
+
+#4
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car.pop("model")
+
+#5
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car.clear()
