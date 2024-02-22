@@ -1,0 +1,97 @@
+#1
+print(10 > 9)
+True
+
+#2
+print(10 == 9)
+False
+
+#3
+print(10 < 9)
+False
+
+#4
+print(bool("abc"))
+True
+
+#5
+print(bool(0))
+False
+
+#1
+print(10*5)
+
+#2
+print(10/2)
+
+#3
+fruits = ["apple", "banana"]
+if "apple" in fruits:
+  print("Yes, apple is a fruit!")
+
+#4
+if 5 != 10:
+  print("5 and 10 is not equal")
+
+#5
+if 5 == 10 or 4 == 4:
+  print("At least one of the statements is true")
+
+#1
+a = 50
+b = 10
+if a > b:
+  print("Hello World")
+
+#2
+a = 50
+b = 10
+if a != b:
+  print("Hello World")
+
+#3
+a = 50
+b = 10
+if a == b:
+  print("Yes")
+else:
+  print("No")
+
+#4
+a = 50
+b = 10
+if a == b:
+  print("1")
+elif a > b:
+  print("2")
+else:
+  print("3")
+
+#5
+if a == b and c == d:
+  print("Hello")
+
+#6
+if a == b or c == d:
+  print("Hello")
+
+#7
+if 5 > 2:
+print("YES")
+
+#8
+a = 2
+b = 5
+print("YES") if a==b else print("NO")
+
+#9
+a = 2
+b = 50
+c = 2
+if a == c or b == c:
+  print("YES")
+
+
+
+
+
