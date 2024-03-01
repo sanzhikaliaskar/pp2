@@ -1,0 +1,27 @@
+import os
+
+def list_directories_files(path):
+    try:
+        
+        directories = [d for d in os.listdir(path) if os.path.isdir(os.path.join(path, d))]
+        print("Directories:")
+        print("\n".join(directories))
+        
+        files = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
+        print("\nFiles:")
+        print("\n".join(files))
+
+        
+        all_contents = os.listdir(path)
+        print("\nAll Directories and Files:")
+        print("\n".join(all_contents))
+
+    except FileNotFoundError:
+        print(f"Error: Path '{path}' not found.")
+    except PermissionError:
+        print(f"Error: Permission denied for path '{path}'.")
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+
+path_to_list = 'your/path'
+list_directories_files(path_to_list)
