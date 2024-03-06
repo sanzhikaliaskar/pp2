@@ -1,0 +1,12 @@
+def count_lines_in_file(file_path):
+    try:
+        with open(file_path, 'r') as file:
+            line_count = sum(1 for line in file)
+            print(f"Number of lines in '{file_path}': {line_count}")
+    except FileNotFoundError:
+        print(f"File '{file_path}' not found.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+text_file_path = "path/to/your/textfile.txt"
+count_lines_in_file(text_file_path)
