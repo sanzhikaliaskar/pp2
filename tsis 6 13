@@ -1,0 +1,10 @@
+def all_elements_true(input_tuple):
+    return all(input_tuple)
+
+my_tuple1 = (True, True, True)
+result1 = all_elements_true(my_tuple1)
+print(f"All elements in tuple1 are True: {result1}")
+
+my_tuple2 = (True, False, True)
+result2 = all_elements_true(my_tuple2)
+print(f"All elements in tuple2 are True: {result2}")
