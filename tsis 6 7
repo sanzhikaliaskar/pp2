@@ -1,0 +1,18 @@
+def copy_file(source_path, destination_path):
+    try:
+        with open(source_path, 'r') as source_file:
+            content = source_file.read()
+
+        with open(destination_path, 'w') as destination_file:
+            destination_file.write(content)
+
+        print(f"File contents copied from '{source_path}' to '{destination_path}' successfully.")
+    except FileNotFoundError:
+        print(f"File '{source_path}' not found.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+source_file_path = "path/to/your/source_file.txt"
+destination_file_path = "path/to/your/destination_file.txt"
+
+copy_file(source_file_path, destination_file_path)
