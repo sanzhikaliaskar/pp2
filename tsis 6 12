@@ -1,0 +1,16 @@
+import math
+import time
+
+def delayed_square_root(number, milliseconds):
+    time.sleep(milliseconds / 1000.0)  # Convert milliseconds to seconds
+    result = math.sqrt(number)
+    return result
+
+
+input_number = 25100
+delay_milliseconds = 2123
+
+
+result = delayed_square_root(input_number, delay_milliseconds)
+
+print(f"Square root of {input_number} after {delay_milliseconds} milliseconds is {result}")
