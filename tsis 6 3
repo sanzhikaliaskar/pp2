@@ -1,0 +1,15 @@
+import os
+
+def analyze_path(path):
+    if os.path.exists(path):
+        print(f"Path '{path}' exists.")
+      
+        directory, filename = os.path.split(path)
+        
+        print(f"Directory: {directory}")
+        print(f"Filename: {filename}")
+    else:
+        print(f"Path '{path}' does not exist.")
+
+given_path = "/path/to/your/file.txt"
+analyze_path(given_path)
