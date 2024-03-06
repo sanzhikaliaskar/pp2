@@ -1,0 +1,20 @@
+import os
+
+def delete_file(file_path):
+    try:
+        if os.path.exists(file_path):
+            print(f"Path '{file_path}' exists.")
+            
+            if os.access(file_path, os.W_OK):
+                os.remove(file_path)
+                print(f"File '{file_path}' deleted successfully.")
+            else:
+                print(f"Write access to '{file_path}' is denied. Unable to delete.")
+        else:
+            print(f"Path '{file_path}' does not exist. Unable to delete.")
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+file_to_delete = "path/to/your/file.txt"
+delete_file(file_to_delete)
